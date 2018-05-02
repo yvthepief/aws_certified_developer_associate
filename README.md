@@ -1,4 +1,6 @@
 # Exam Tips AWS Certified Developer Associate
+Author: Yvo van Zee
+Source: ACloud.guru 
 
 ## Concepts and Components:
 - AWS Global Infrastructure
@@ -61,6 +63,11 @@ Grants users limited and temporary access to AWS resources. Users can come from 
 	- Use FB/Amazon/Google or other OpenID providers to log in.
 - Cross Account Access
 	- Lets users from one AWS account access resources in another.
+
+*Federation:* Combining or joining a list of users in one domain (such as IAM) with a list of users in another domain (such as Active Directory or FB)
+*Identity Broker:* a service that allows you to take an identity from point A and join it (federate it) to point B
+*Identity Store:* Services like Active Directory, Facebook, Google
+*Identities:* a user of a service like AD or FB 
 
 
 
