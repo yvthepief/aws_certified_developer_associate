@@ -2,7 +2,7 @@
 Author: Yvo van Zee
 Source: ACloud.guru 
 
-## Concepts and Components:
+## AWS Concepts and Components:
 - AWS Global Infrastructure
 - Compute
 - Storage
@@ -26,17 +26,18 @@ Source: ACloud.guru
 
 ## What is needed for the exam according to A Cloud Guru:
 - AWS Global Infrastructure
-- Compute
+- [Compute](#compute)
 - Storage
 - Databases
 - Networking & Content Delivery
 - Management Tools
 - Analytics
-- [Security & Identity & Compliance](#iam)
+- [Security & Identity & Compliance](#security)
 - Application Integration
 
 ---
 
+## Security
 ### IAM
 Identity and Access Management (IAM) is universal, it does not apply to regions at this time.
 The "root account" is simply the account created when first setup your AWS accont. It has complete Admin access.
@@ -83,15 +84,11 @@ a user of a service like AD or FB
 Remember the following steps how identity communication works:
 1. Develop an Identity Broker to communicate with LDAP and AWS STS
 2. Identity Broker always authenticates with LDAP first, then with AWS STS
-3. Application then gets temporary access to AWS resources
+3. Application then gets temporary access to AWS resources (assumerole)
 
 ---
-
-
-
-
-
-
+## Compute
+### EC2
 Read EC2 FAQ before Exams
 
 Differences between:
