@@ -1,6 +1,6 @@
-Exam Tips AWS Certified Developer Associate
+# Exam Tips AWS Certified Developer Associate
 
-Concepts and Components:
+## Concepts and Components:
 - AWS Global Infrastructure
 - Compute
 - Storage
@@ -22,7 +22,7 @@ Concepts and Components:
 - Internet of Things
 - Game Development
 
-What is needed for the exam according to A Cloud Guru:
+## What is needed for the exam according to A Cloud Guru:
 - AWS Global Infrastructure
 - Compute
 - Storage
@@ -33,7 +33,7 @@ What is needed for the exam according to A Cloud Guru:
 - Security & Identity & Compliance
 - Application Integration
 
-IAM
+### IAM
 - Centralised Control of your AWS account
 - Shared Access to your AWS account
 - Granular Permissions
@@ -44,13 +44,13 @@ IAM
 - Integrates with may different AWS services
 - Supports PCI DSS Compliance
 
-Critical terms IAM
+#### Critical terms IAM
 Users = End Users (think people)
 Groups = A collection of users under one set of Permissions
 Roles = You create roles and can then assign them to AWS resources
 Policies = A document that defines one or more Permissions
 
-Security Token Service (STS)
+### Security Token Service (STS)
 Grants users limited and temporary access to AWS resources. Users can come from three sources:
 - Federation (typically Active Directory)
 	- Users Security Assertion Markup Language (SAML)
