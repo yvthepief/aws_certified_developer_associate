@@ -35,7 +35,14 @@ Source: ACloud.guru
 - Security & Identity & Compliance
 - Application Integration
 
+---
+
 ### IAM
+Identity and Access Management (IAM) is universal, it does not apply to regions at this time.
+The "root account" is simply the account created when first setup your AWS accont. It has complete Admin access.
+New users have _NO_ permissions when first created. The new users are assigned an Access Key ID & Secret Access Keys when first created. These are not the same as a password, and you cannot use the Access Key ID & Secret Access Key to login in to the consile. You can use this to access AWS via the API's and Command Line however. You only get to view these keys once. If you lose them, you have to regenerate them.
+Also always set Multifactor Authentication on your Root account. It is also possible to create own password rotation policies. 
+
 - Centralised Control of your AWS account
 - Shared Access to your AWS account
 - Granular Permissions
@@ -73,7 +80,12 @@ Services like Active Directory, Facebook, Google
 ##### Identities:
 a user of a service like AD or FB 
 
+Remember the following steps how identity communication works:
+1. Develop an Identity Broker to communicate with LDAP and AWS STS
+2. Identity Broker always authenticates with LDAP first, then with AWS STS
+3. Application then gets temporary access to AWS resources
 
+---
 
 
 
